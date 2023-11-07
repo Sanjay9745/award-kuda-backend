@@ -11,4 +11,6 @@ router.post("/register", userController.register);
 router.post("/edit", UserAuth, userController.editUser);
 //delete
 router.delete("/delete", UserAuth, userController.deleteUser);
+ router.get("/get-details", UserAuth, userController.getUserDetails);
+ 
 module.exports = router; // export the router object
